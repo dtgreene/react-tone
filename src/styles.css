@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  src: url('./assets/Montserrat-VariableFont_wght.ttf') format('opentype');
+}
+
+@layer base {
+  :root {
+    --background: rgb(25, 25, 32);
+    --foreground: #a1a1aa;
+    --ring: var(--foreground);
+
+    --primary: #0284c7;
+    --primary-foreground: #fff;
+
+    --accent: rgb(17, 17, 23);
+    --accent-foreground: #fff;
+
+    --popover: var(--background);
+    --popover-foreground: var(--foreground);
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --danger: #ff4d4d;
+    --danger-foreground: #fff;
+  }
+
+  body {
+    @apply bg-background text-white overflow-auto;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+  }
+
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
